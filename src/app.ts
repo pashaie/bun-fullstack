@@ -1,6 +1,7 @@
 import express from 'express';
 import todoRoutes from "./routes/todoRoutes"
 import blogRoutes from "./routes/blogRoutes"
+import gymRoutes from "./routes/gymRoutes"
 import connectDB from "./config/db"
 
 
@@ -21,6 +22,7 @@ app.get("/ping", (_, res) => {
 // routes
 app.use('/api/todo', todoRoutes);
 app.use('/api/blog', blogRoutes);
+app.use('/api/gym', gymRoutes);
 
 app.listen(port, () => {
   console.log(`Listening on port: http://localhost:${port} 🚀 `);
