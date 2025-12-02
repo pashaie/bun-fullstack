@@ -1,0 +1,31 @@
+//https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+GET http://localhost:8080/api/blog HTTP/1.1
+
+###
+POST http://localhost:8080/api/blog HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Blog 2",
+    "content": "xyz",
+    "auther": "me",
+    "category": "IT"
+}
+
+###
+GET http://localhost:8080/api/blog/692f2aa6744fc7283e5ce03e HTTP/1.1
+
+
+
+###
+PUT http://localhost:8080/api/blog/691f5cd0911bc0e1b9ddafc4 HTTP/1.1
+content-type: application/json
+
+{
+    "completed": true
+}
+
+
+###
+DELETE http://localhost:8080/blog/todo/691f5cd0911bc0e1b9ddafc4 HTTP/1.1
