@@ -1,0 +1,32 @@
+//https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+GET http://localhost:8080/api/country HTTP/1.1
+
+###
+POST http://localhost:8080/api/country HTTP/1.1
+content-type: application/json
+
+{
+    "name": "IRAN",
+    "code": "ir",
+    "flag": "🚀"    
+}
+
+###
+GET http://localhost:8080/api/country/693b0dd7d4948e1b74fa23a1 HTTP/1.1
+
+
+
+###
+PUT http://localhost:8080/api/country/693b0dd7d4948e1b74fa23a1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "IRAN",
+    "code": "IR",
+    "flag": "🚀"   
+}
+
+
+###
+DELETE http://localhost:8080/blog/country/693b0dd7d4948e1b74fa23a1 HTTP/1.1
