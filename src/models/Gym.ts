@@ -15,3 +15,7 @@ export const Gym = model('Gym', schema);
 
 // NoSQL -> MongoDb                 : collection
 // Relational -> MySQl, SQL Server  : table
+
+
+//Front Office - Vitrin
+//Back Office  - 

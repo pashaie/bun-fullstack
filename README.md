@@ -35,4 +35,8 @@ USER (http req) -> Express (API Server)
 
 
 
-MEN R
+MENR
+
+
+CSS -> Tailwind ATOMIC 
+        ->
