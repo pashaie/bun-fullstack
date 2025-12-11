@@ -15,7 +15,17 @@ connectDB();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
+//Route handler
+app.get("/", (_, res) => {
+  res.send("Salam");
+});
+
 app.get("/ping", (_, res) => {
+  res.send("🏓 pong!");
+});
+
+app.get("/api/todo", (_, res) => {
   res.send("🏓 pong!");
 });
 
